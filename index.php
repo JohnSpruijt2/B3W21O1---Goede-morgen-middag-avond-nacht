@@ -16,22 +16,26 @@
         $time = date("H:i:s");
     if (date("H") > 18) {
         $background = "evening";
-        print "<a> Goedeavond!<br>";
+        echo "<div id='".$background."'>";
+        echo "<a> Goedeavond!<br>";
     }
     elseif (date("H") > 12) {
         $background = "afternoon";
-        print "<a> Goedemiddag!<br>";
+        echo "<div id='".$background."'>";
+        echo "<a> Goedemiddag!<br>";
     }
     elseif (date("H") > 6) {
         $background = "morning";
-        print "<a> Goedemorgen!<br>";
+        echo "<div id='".$background."'>";
+        echo "<a> Goedemorgen!<br>";
     }
     elseif (date("H") >-1) {
         $background = "night";
-        print "<a> Goedenacht!<br>";
+        echo "<div id='".$background."'>";
+        echo "<a> Goedenacht!<br>";
     }
-    print $time."</a>";
-    print "<style> body {background-image:url('images/$background.png');} </style>";
+    echo $time."</a>";
+    echo "</div>";
 
     ?>
 </body>

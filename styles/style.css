@@ -1,3 +1,7 @@
+* {
+    padding: 0;
+    margin: 0;
+}
 body a {
     text-align: center;
     margin: 0 auto;
@@ -6,6 +10,24 @@ body a {
     font-family: 'Playfair Display', serif;
 }
 body {
+    width: 100vw;
+    height: 100vh;
+}
+div {
+    width: 100vw;
+    height: 100vh;
     text-align: center;
     background-size: cover;
+}
+#evening {
+    background-image: url("../images/evening.png");
+}
+#afternoon {
+    background-image: url("../images/afternoon.png");
+}
+#morning {
+    background-image: url("../images/morning.png");
+}
+#night {
+    background-image: url("../images/night.png");
 }
